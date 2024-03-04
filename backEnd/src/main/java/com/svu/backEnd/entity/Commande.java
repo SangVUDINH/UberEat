@@ -1,4 +1,4 @@
-package entity;
+package com.svu.backEnd.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -34,6 +34,9 @@ public class Commande implements Serializable {
 
     @OneToMany(mappedBy = "commande", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Produit> produits;
+
+    @ManyToOne
+    private Livreur livreur;
 
     // Autres attributs, constructeurs, getters et setters
 }

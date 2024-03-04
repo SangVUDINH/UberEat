@@ -1,7 +1,7 @@
-package service;
+package com.svu.backEnd.service;
 
-import dao.CommandeRepository;
-import entity.Commande;
+import com.svu.backEnd.entity.Commande;
+import com.svu.backEnd.dao.CommandeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

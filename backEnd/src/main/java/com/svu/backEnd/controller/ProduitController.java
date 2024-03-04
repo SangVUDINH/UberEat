@@ -1,9 +1,9 @@
-package controller;
+package com.svu.backEnd.controller;
 
-import entity.Produit;
+import com.svu.backEnd.entity.Produit;
+import com.svu.backEnd.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.ProduitService;
 
 import java.util.List;
 

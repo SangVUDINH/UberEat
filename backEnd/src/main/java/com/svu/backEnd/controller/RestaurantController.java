@@ -1,9 +1,9 @@
-package controller;
+package com.svu.backEnd.controller;
 
-import entity.Restaurant;
+import com.svu.backEnd.entity.Restaurant;
+import com.svu.backEnd.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.RestaurantService;
 
 import java.util.List;
 

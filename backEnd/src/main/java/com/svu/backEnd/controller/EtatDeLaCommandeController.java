@@ -1,9 +1,9 @@
-package controller;
+package com.svu.backEnd.controller;
 
-import entity.EtatDeLaCommande;
+import com.svu.backEnd.entity.EtatDeLaCommande;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.EtatDeLaCommandeService;
+import com.svu.backEnd.service.EtatDeLaCommandeService;
 
 import java.util.List;
 

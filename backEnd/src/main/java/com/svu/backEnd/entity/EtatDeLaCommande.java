@@ -1,7 +1,6 @@
-package entity;
+package com.svu.backEnd.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,11 +8,12 @@ import java.io.Serializable;
 
 @Entity
 @Data
-@Table(name = "produits")
-public class Produit implements Serializable {
+@NoArgsConstructor
+@Table(name = "etats_commande")
+public class EtatDeLaCommande implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "nom")
     private String nom;
@@ -21,6 +21,6 @@ public class Produit implements Serializable {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "prix")
-    private double prix;
+    // Constructeurs, getters, setters, etc.
 }
+

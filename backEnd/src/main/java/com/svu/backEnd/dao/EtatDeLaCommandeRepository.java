@@ -1,6 +1,6 @@
-package dao;
+package com.svu.backEnd.dao;
 
-import entity.EtatDeLaCommande;
+import com.svu.backEnd.entity.EtatDeLaCommande;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package dao;
+package com.svu.backEnd.dao;
 
-import entity.Restaurant;
+import com.svu.backEnd.entity.Restaurant;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

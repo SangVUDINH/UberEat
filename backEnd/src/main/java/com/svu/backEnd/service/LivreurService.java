@@ -1,7 +1,7 @@
-package service;
+package com.svu.backEnd.service;
 
-import dao.LivreurRepository;
-import entity.Livreur;
+import com.svu.backEnd.entity.Livreur;
+import com.svu.backEnd.dao.LivreurRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

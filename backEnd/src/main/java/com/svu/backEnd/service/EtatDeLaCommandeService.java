@@ -1,7 +1,7 @@
-package service;
+package com.svu.backEnd.service;
 
-import dao.EtatDeLaCommandeRepository;
-import entity.EtatDeLaCommande;
+import com.svu.backEnd.dao.EtatDeLaCommandeRepository;
+import com.svu.backEnd.entity.EtatDeLaCommande;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

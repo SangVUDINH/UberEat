@@ -1,4 +1,4 @@
-package entity;
+package com.svu.backEnd.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

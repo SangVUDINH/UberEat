@@ -1,7 +1,7 @@
-package service;
+package com.svu.backEnd.service;
 
-import dao.ProduitRepository;
-import entity.Produit;
+import com.svu.backEnd.dao.ProduitRepository;
+import com.svu.backEnd.entity.Produit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

@@ -1,9 +1,9 @@
-package controller;
+package com.svu.backEnd.controller;
 
-import entity.Livreur;
+import com.svu.backEnd.entity.Livreur;
+import com.svu.backEnd.service.LivreurService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.LivreurService;
 
 import java.util.List;
 

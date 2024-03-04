@@ -1,14 +1,17 @@
 -- Script pour créer la table "Utilisateurs"
+DROP TABLE IF EXISTS `Utilisateurs`;
 CREATE TABLE Utilisateurs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(50),
     prenom VARCHAR(50),
     adresse VARCHAR(100),
     email VARCHAR(100),
-    mot_de_passe VARCHAR(100)
+    mot_de_passe VARCHAR(100),
+    role VARCHAR(100)
 );
 
 -- Script pour créer la table "Restaurants"
+DROP TABLE IF EXISTS `Restaurants`;
 CREATE TABLE Restaurants (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100),
@@ -17,6 +20,7 @@ CREATE TABLE Restaurants (
 );
 
 -- Script pour créer la table "Produits"
+DROP TABLE IF EXISTS `Produits`;
 CREATE TABLE Produits (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100),
@@ -25,11 +29,11 @@ CREATE TABLE Produits (
 );
 
 -- Insertion de données dans la table "Utilisateurs"
-INSERT INTO Utilisateurs (nom, prenom, adresse, email, mot_de_passe)
+INSERT INTO Utilisateurs (nom, prenom, adresse, email, mot_de_passe, role)
 VALUES
-    ('Dupont', 'Jean', '1 Rue de la Paix, Paris', 'jean.dupont@example.com', 'motdepasse123'),
-    ('Lefebvre', 'Marie', '15 Avenue des Lilas, Lyon', 'marie.lefebvre@example.com', 'secret123'),
-    ('Martin', 'Pierre', '8 Rue de la Gare, Marseille', 'pierre.martin@example.com', '12345mdp');
+    ('Dupont', 'Jean', '1 Rue de la Paix, Paris', 'jean.dupont@example.com', '$2y$10$.qkbukzzX21D.bqbI.B2R.tvWP90o/Y16QRWVLodw51BHft7ZWbc.', 'USER'),
+    ('Lefebvre', 'Marie', '15 Avenue des Lilas, Lyon', 'marie.lefebvre@example.com', '$2y$10$.qkbukzzX21D.bqbI.B2R.tvWP90o/Y16QRWVLodw51BHft7ZWbc.', 'USER'),
+    ('Martin', 'Pierre', '8 Rue de la Gare, Marseille', 'pierre.martin@example.com', 'user', 'USER');
 
 -- Insertion de données dans la table "Restaurants"
 INSERT INTO Restaurants (nom, adresse, description)
@@ -41,6 +45,6 @@ VALUES
 -- Insertion de données dans la table "Produits"
 INSERT INTO Produits (nom, description, prix)
 VALUES
-    ('Escargots à l'ail', 'Escargots de Bourgogne servis avec de l'ail et du beurre', 12.99),
+    ('Escargots à l''ail', 'Escargots de Bourgogne servis avec de l''ail et du beurre', 12.99),
     ('Sashimi de saumon', 'Tranches fines de saumon frais, servi avec du wasabi et du gingembre', 18.50),
-    ('Pizza Margherita', 'Tomate, mozzarella, basilic, huile d'olive et origan', 10.95);
+    ('Pizza Margherita', 'Tomate, mozzarella, basilic, huile d''olive et origan', 10.95);

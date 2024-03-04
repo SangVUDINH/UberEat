@@ -1,7 +1,7 @@
-package service;
+package com.svu.backEnd.service;
 
-import dao.RestaurantRepository;
-import entity.Restaurant;
+import com.svu.backEnd.entity.Restaurant;
+import com.svu.backEnd.dao.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

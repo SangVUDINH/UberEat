@@ -1,4 +1,4 @@
-package entity;
+package com.svu.backEnd.entity;
 
 
 import jakarta.persistence.*;
@@ -30,5 +30,8 @@ public class Utilisateur implements Serializable {
 
     @Column(name = "mot_de_passe")
     private String motDePasse;
+
+    @Column
+    private String role;
 }
 

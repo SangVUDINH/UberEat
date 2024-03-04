@@ -1,6 +1,6 @@
-package dao;
+package com.svu.backEnd.dao;
 
-import entity.Produit;
+import com.svu.backEnd.entity.Produit;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
