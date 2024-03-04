@@ -36,7 +36,6 @@ public class SpringSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         MvcRequestMatcher mvcRequestMatcher = new MvcRequestMatcher(handlerMappingIntrospector, "/utilisateurs");
-        // Ici, vous définissez le chemin du servlet pour le matcher
         mvcRequestMatcher.setServletPath("/");
 
         return http.authorizeHttpRequests(auth -> {
@@ -53,6 +52,7 @@ public class SpringSecurityConfig {
         return authenticationManagerBuilder.build();
     }
 
+    // dans le fichier sql il faut injecter le mdp encodé
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

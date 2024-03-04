@@ -32,7 +32,7 @@ CREATE TABLE Produits (
 INSERT INTO Utilisateurs (nom, prenom, adresse, email, mot_de_passe, role)
 VALUES
     ('Dupont', 'Jean', '1 Rue de la Paix, Paris', 'jean.dupont@example.com', '$2y$10$.qkbukzzX21D.bqbI.B2R.tvWP90o/Y16QRWVLodw51BHft7ZWbc.', 'USER'),
-    ('Lefebvre', 'Marie', '15 Avenue des Lilas, Lyon', 'marie.lefebvre@example.com', '$2y$10$.qkbukzzX21D.bqbI.B2R.tvWP90o/Y16QRWVLodw51BHft7ZWbc.', 'USER'),
+    ('Feve', 'Marie', '15 Avenue des Lilas, Lyon', 'marie.lefebvre@example.com', '$2a$10$e5T8FPBuqvC9OKeJrAwm0O4dyR2eeq5ZxV.Smw9cuyLGTz/5HS6ka', 'USER'),
     ('Martin', 'Pierre', '8 Rue de la Gare, Marseille', 'pierre.martin@example.com', 'user', 'USER');
 
 -- Insertion de données dans la table "Restaurants"
