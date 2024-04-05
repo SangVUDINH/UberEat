@@ -2,10 +2,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import FormulaireInscription from '@/components/FormulaireInscription.vue'
+import SideBarHomeView from '@/views/SideBarHomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/sidebar',
+      name: 'sideBarHome',
+      component: SideBarHomeView
+    },
     {
       path: '/',
       name: 'home',
